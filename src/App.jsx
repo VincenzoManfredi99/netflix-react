@@ -4,11 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import SottoTitoli from "./components/sottoTitoli";
 import CardNetflix from "./components/card";
 import FooterNetflix from "./components/footerNetflix";
+import ProfilePage from "./components/profile";
 
 function App() {
   return (
     <>
-      <header>
+      {/*<header>
         <HeaderNetflix />
       </header>
       <main>
@@ -21,7 +22,8 @@ function App() {
       </main>
       <footer>
         <FooterNetflix />
-      </footer>
+      </footer>*/}
+      <ProfilePage />
     </>
   );
 }

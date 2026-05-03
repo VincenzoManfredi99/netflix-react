@@ -38,7 +38,7 @@ class CardNetflix extends Component {
   render() {
     const { movies, isLoading, isError } = this.state;
     return (
-      <Row xs={2} md={3} xl={6} className="p-3">
+      <Row xs={2} md={3} xl={6} className="p-3 g-3">
         {isLoading && <Spinner animation="border" />}
         {isError && <Alert variant="danger">Errore nel caricamento</Alert>}
         {!isLoading &&

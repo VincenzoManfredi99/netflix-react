@@ -11,7 +11,7 @@ import accountLogo from "../assets/avatar.png";
 function HeaderNetflix() {
   return (
     <Navbar expand="lg" className="bg-transparent" data-bs-theme="dark">
-      <Container fluid className="px-4">
+      <Container fluid className="px-3">
         <Navbar.Brand href="#home">
           <img src={netflixLogo} alt="logo" style={{ width: "100px" }} />
         </Navbar.Brand>
