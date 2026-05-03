@@ -1,0 +1,24 @@
+.bg-netflix {
+  background-color: rgb(23, 23, 23);
+}
+
+.copertina {
+  transition: transform 0s;
+}
+
+.copertina:hover {
+  transition: transform 0.3s;
+  transform: scale(1.2);
+}
+
+/* Profile Page */
+
+#header-profile {
+  padding: 10px;
+  background: linear-gradient(180deg, rgb(0, 0, 0), rgb(23, 23, 23));
+}
+
+.dimensione-ridotta {
+  font-size: 0.4em;
+  padding: 2px 4px;
+}
