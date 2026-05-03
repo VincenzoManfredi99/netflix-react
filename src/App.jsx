@@ -5,12 +5,15 @@ import SottoTitoli from "./components/sottoTitoli";
 import CardNetflix from "./components/card";
 import FooterNetflix from "./components/footerNetflix";
 import ProfilePage from "./components/profile";
+import HeroNetflix from "./components/heroNetflix";
 
 function App() {
   return (
     <>
-      {/*<header>
+      /*
+      <header>
         <HeaderNetflix />
+        <HeroNetflix />
       </header>
       <main>
         <SottoTitoli testo="Saga di Batman" />
@@ -22,8 +25,9 @@ function App() {
       </main>
       <footer>
         <FooterNetflix />
-      </footer>*/}
-      <ProfilePage />
+      </footer>
+      */
+      {/*<ProfilePage />*/}
     </>
   );
 }
