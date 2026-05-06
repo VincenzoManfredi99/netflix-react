@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Col, Card, Row, Spinner, Alert } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 class CardNetflix extends Component {
   state = {
@@ -45,9 +46,11 @@ class CardNetflix extends Component {
           !isError &&
           movies.slice(0, 6).map((movie) => (
             <Col key={movie.imdbID}>
-              <Card>
-                <Card.Img variant="top" src={movie.Poster} />
-              </Card>
+              <Link to={`/movie-details/${movie.imdbID}`}>
+                <Card>
+                  <Card.Img variant="top" src={movie.Poster} />
+                </Card>
+              </Link>
             </Col>
           ))}
       </Row>

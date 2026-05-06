@@ -9,6 +9,7 @@ import {
   Form,
   Image,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const ProfilePage = () => {
   const headerStyle = {
@@ -19,7 +20,9 @@ const ProfilePage = () => {
   return (
     <>
       <header style={headerStyle}>
-        <img src={netflixLogo} alt="logo" style={{ width: "100px" }} />
+        <Link to="/">
+          <img src={netflixLogo} alt="logo" style={{ width: "100px" }} />
+        </Link>
       </header>
       <main className="bg-dark min-vh-100 py-5">
         <Container>

@@ -7,13 +7,17 @@ import {
 } from "react-bootstrap";
 import netflixLogo from "../assets/netflix_logo.png";
 import accountLogo from "../assets/avatar.png";
+import { Link } from "react-router-dom";
 
 function HeaderNetflix() {
   return (
     <Navbar expand="lg" className="bg-transparent" data-bs-theme="dark">
       <Container fluid className="px-3">
         <Navbar.Brand href="#home">
-          <img src={netflixLogo} alt="logo" style={{ width: "100px" }} />
+          <Link to="/">
+            {" "}
+            <img src={netflixLogo} alt="logo" style={{ width: "100px" }} />
+          </Link>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -55,7 +59,9 @@ function HeaderNetflix() {
               </Dropdown.Toggle>
 
               <Dropdown.Menu variant="dark">
-                <Dropdown.Item href="#/profile">Edit Profile</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/profile">
+                  Edit Profile
+                </Dropdown.Item>
                 <Dropdown.Item href="#/settings">Account</Dropdown.Item>
                 <Dropdown.Divider />
                 <Dropdown.Item href="#/logout">Sign Out</Dropdown.Item>

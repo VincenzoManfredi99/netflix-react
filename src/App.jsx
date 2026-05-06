@@ -1,33 +1,20 @@
 import "./App.css";
-import HeaderNetflix from "./components/headerNetflix";
 import "bootstrap/dist/css/bootstrap.min.css";
-import SottoTitoli from "./components/sottoTitoli";
-import CardNetflix from "./components/card";
-import FooterNetflix from "./components/footerNetflix";
 import ProfilePage from "./components/profile";
-import HeroNetflix from "./components/heroNetflix";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomeNetflix from "./components/Home";
+import MovieDetails from "./components/movieDetails";
 
 function App() {
   return (
     <>
-      /*
-      <header>
-        <HeaderNetflix />
-        <HeroNetflix />
-      </header>
-      <main>
-        <SottoTitoli testo="Saga di Batman" />
-        <CardNetflix searchSaga="batman" />
-        <SottoTitoli testo="Saga di Batman" />
-        <CardNetflix searchSaga="harry potter" />
-        <SottoTitoli testo="Saga di Scream" />
-        <CardNetflix searchSaga="scream" />
-      </main>
-      <footer>
-        <FooterNetflix />
-      </footer>
-      */
-      {/*<ProfilePage />*/}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomeNetflix />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/movie-details/:movieId" element={<MovieDetails />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
